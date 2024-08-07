@@ -1,0 +1,36 @@
+npx playwright test : Runs all the testcases under tests folder in headless mode.
+npx playwright test --headed : Runs all the testcases under tests folder in headed mode.
+npx playwright test --headed --ui: Opens the playwright traces window
+npx playwright test XYZ--headed --ui : To run the (XYZ/specific) testcase under tests folder
+npx playwright test XYZ --headed --debug : Opens the debugger window in playwright.
+
+Install Playwright using terminal Command : npm init playwright@latest
+
+check current version of Playwright Command : npm playwright -v
+
+Check in cmd :->  node -v
+Check npm :-> npm -v
+
+By default create HTML report Command : npx playwright show-report
+TestCase Running Commands : npx playwright test (by default in headless mode)
+
+Run test for the specific browser : npx playwright test  myTest.spec.js -project = chromium 
+Run the test step by step debug :  npx playwright test  myTest.spec.js –project = chromium – headed – debug  
+
+
+
+# Codegen- Test generator and Test Records Commands:
+
+1.npx playwright codegen (codegen function active but not record test)
+2.npx playwright codegen –help (get more options for help)
+3.npx playwright codegen -o tests/mytest.spc.js (codegen function active and  record test in test folder)
+4.npx playwright codegen –target language javascript(for language)
+5.npx playwright codegen --browser chromium(for browser)
+6.npx playwright codegen –device “iphone 13” (for mobile simulator) 
+7.npx playwright codegen –viewport-size “1280,720”(we can decide size of the page or size of the browser window)
+
+TestCase Running command : 
+                     // path of folder           choose browser     ui mode 
+npx playwright test  tests/MouseHover.spec.js --project = chromium  headed
+
+
